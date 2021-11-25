@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #141414;
+    font-family: 'Arial', Times, serif;
+    color:rgb(255, 255, 255);
+    height: 1600px;
+ }
+
+.box{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#fdfbfb,#cfcfcf);
+}
+
+header .logo{
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+header nav a{
+    font-size: 20px;
+    text-decoration:none;
+    color:rgb(32, 32, 32);
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#AAA;
+}
+
+.Box-Art {
+    margin-top: 20px;
+    display: flex;
+    width: 95%;
+    height: 300px;
+    background: rgb(61, 61, 61);
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px;
+    border: darkorange solid 2px;
+}
+
+.Box-MVP {
+    display: flex;
+    width: 95%;
+    height: 300px;
+    background: rgb(61, 61, 61);
+    box-shadow: 10px 10px 10px 10px rgb(5, 5, 5);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px;
+    border: darkorange solid 2px;
+}
+
+.Box-Art h4{
+    font-size: 55px;
+    margin-top: 90px;
+    margin-right: 50px;
+    margin-left: 40px;
+    text-shadow: 2px 2px 2px darkorange;
+}
+
+.Box-MVP h4 {
+    font-size: 55px;
+    margin-top: 90px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px 2px darkorange;
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: darkorange;
+	color: white;
+	font-weight: bold;
+}
+
+td,th {
+	border: 1px solid white;
+	padding: 8px 15px;
+}
+
+td:hover {
+	transform: scale(1.1);
+}
+
+th:hover {
+	transform: scale(1.1);
+}
+
+/*Alternativo*/
+
+.Box-Ass {
+    display: flex;
+    width: 95%;
+    height: 300px;
+    background: linear-gradient(#fcfcfc,#f0e7e7);
+    color: black;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px;
+    border: darkorange solid 2px;
+}
+
+
+.Box-Ass h4 {
+    font-size: 55px;
+    margin-top: 90px;
+    margin-left: 60px;
+    text-shadow: 2px 2px 2px darkorange;
+}
+
+.Box-Ass table {
+    margin-top: 15px;
+    margin-right: 70px;
+}
+
+.Box-Ass thead {
+	background: darkorange;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+.Box-Ass td,th {
+	border: 1px solid rgb(0, 0, 0);
+	padding: 8px 15px;
+}
+
+.Box-Ass td:hover {
+	transform: scale(1.1);
+}
+
+.Box-Ass th:hover {
+	transform: scale(1.1);
+}
+

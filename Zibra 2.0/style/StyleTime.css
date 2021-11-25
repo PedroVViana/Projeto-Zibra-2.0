@@ -1,0 +1,304 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   background: #141414;
+   font-family: 'Arial', Times, serif;
+   color:rgb(255, 255, 255);
+}
+
+
+.box{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#fdfbfb,#cfcfcf);
+}
+
+header .logo{
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+header nav a{
+    font-size: 20px;
+    text-decoration:none;
+    color:rgb(32, 32, 32);
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#AAA;
+}
+
+.formação{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50),rgba(0,0,0,.50)) ,url('../photos/formação.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.formação .descricao{
+    font-size: 20px;
+    width: 450px;
+   text-align: justify;
+   margin-bottom: 5px;
+   padding-top: 20px;
+}
+
+
+.formação .titulo{
+    margin-top: 240px;
+    font-size: 40px
+    
+}
+
+.container-D{
+    margin-left: 60px;
+}
+
+.filme-principal .container{
+    width: 100%;
+}
+
+.box-time{
+    margin-top: 5px;
+    height: 280px;
+    width: 100px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel {
+    margin-top:490px;
+}
+
+.lista {
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contender-c {
+    width: 750px;
+    height: 500px;
+    background:none;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+h2 {
+    color: rgb(255, 246, 246);
+    padding: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.carrossel {
+    margin-left: 50px;
+    box-shadow: 2px 2px 2px rgb(161, 161, 161);
+    height: 500px;
+    width: 650px; 
+    padding: 20px;
+}
+
+#img{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    overflow: hidden;
+    
+}
+
+.img img {
+    object-fit: cover;
+    height: 450px;
+    width: 650px;
+    animation: Transicao;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Transicao {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-135vw);}
+}
+
+.Video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Video video{
+   position: fixed;
+   top: 0px;
+   left: 0;
+   object-fit: cover;
+   min-width: 100%;
+}
+
+.Video .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Video .content h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    animation: Animacao;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Animacao {
+    0% {opacity: 0%; font-size: 70px;}
+    100% {opacity: 100%; font-size: 90px;}
+}
+
+.Video .content .historia {
+    background: rgba(0, 0, 0, 0.479);
+    width: 850px;
+    height: 805px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 2px 2px 2px 2px rgb(255, 249, 249);
+    animation: Animacao2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Animacao2 {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+
+.Video .content .historia p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.Video .content .historia h1 {
+    font-size: 22px;
+    text-align: left;
+    padding: 20px;
+}
+
+#Logo {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*Contatos*/
+
+.Video .content-contatos {
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.479);
+    width: 870px;
+    height: 920px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 2px 2px 2px 2px rgb(255, 249, 249);
+}
+
+.Video .content-contatos h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.recrutamento {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+form {
+	margin-top: 20px;
+    margin-left: 20px;
+}
+
+form input {
+    color: rgb(253, 253, 253);
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+
+form select {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.inputPadrão {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 20px;
+	width: 50%;
+    background:none;
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+    border-radius: 12px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.envio {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.envio:hover {
+	background: rgba(0, 4, 255, 0.904);
+	width: 45%;
+}
